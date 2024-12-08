@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html  lang="en">
+<html lang="en">
 <head>
     <title>Головна</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,7 +18,7 @@
                 <img src="/static/nautilus.png" alt="" style="max-width: 50px;">
             </div>
             <div class="app mt-3">
-                <img src="/static/camera.png" alt="" style="max-width: 50px;">
+                <img src="/static/camera.png" alt="" style="max-width: 50px;"  data-toggle="modal" data-target="#exampleModal">
             </div>
             <div class="app mt-3">
                 <img src="/static/terminal.png" alt="" style="max-width: 50px;">
@@ -29,6 +29,31 @@
             </div>
         </div>
         <div class="desktop w-100" style="background-image: url('/static/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        </div>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-dark">
+                <style>
+                    .modal-content.custom-dark {
+                        background-color: #161616;
+                        color: white;
+                        border: none;
+                    }
+                </style>
+                <div class="modal-header">
+                    <p class="modal-title fs-5" id="exampleModalLabel">Камера</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-between">
+                    <img class="m-4 img-fluid" src="/static/camera.jpg" alt="" style="max-width: 600px;">
+                    <img class="m-4 img-fluid" src="/static/camera_btm.png" alt="" style="max-width: 70px;">
+                </div>
+            </div>
         </div>
     </div>
 
