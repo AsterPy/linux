@@ -18,7 +18,7 @@
                 <img src="/static/nautilus.png" alt="" style="max-width: 50px;">
             </div>
             <div class="app mt-3">
-                <img src="/static/camera.png" alt="" style="max-width: 50px;"  data-toggle="modal" data-target="#camera">
+                <img src="/static/camera.png" alt="" style="max-width: 50px;">
             </div>
             <div class="app mt-3">
                 <img src="/static/terminal.png" alt="" style="max-width: 50px;">
@@ -28,14 +28,110 @@
                 <img src="/static/treash.webp" alt="" style="max-width: 50px;">
             </div>
         </div>
-        <div class="desktop w-100" style="background-image: url('/static/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        <div class="desktop w-100 d-flex" style="background-image: url('/static/bg.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center; ">
             <div class="file d-flex flex-column align-items-center m-3" style="max-width: 70px;">
                 <img class="img-fluid" src="/static/txt.png" alt="" data-toggle="modal" data-target="#file">
-                <p class="text-white" style="font-size: 12px;">file.txt</p>
+                <p class="text-white text-nowrap" style="font-size: 10px;">file.txt</p>
             </div>
+            <div class="d-block" style="width: 100px;"></div>
             <div class="file d-flex flex-column align-items-center m-3" style="max-width: 70px;">
                 <img class="img-fluid" src="/static/txt.png" alt="" data-toggle="modal" data-target="#filein">
-                <p class="text-white" style="font-size: 12px;">VirtualBox.txt</p>
+                <p class="text-white text-nowrap" style="font-size: 10px;">VirtualBox.txt</p>
+            </div>
+            <div class="file d-flex flex-column align-items-center m-3" style="max-width: 70px;">
+                <img class="img-fluid" src="/static/txt.png" alt="" data-toggle="modal" data-target="#instruction">
+                <p class="text-white text-nowrap" style="font-size: 10px;">download Ubuntu.txt</p>
+            </div>
+            <div class="d-block" style="width: 100px;"></div>
+            <div class="file d-flex flex-column align-items-center m-3" style="max-width: 70px;">
+                <img class="img-fluid" src="/static/txt.png" alt="" data-toggle="modal" data-target="#sources">
+                <p class="text-white text-nowrap" style="font-size: 10px;">sources.txt</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- file -->
+    <div class="modal fade" id="sources" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title fs-5" id="exampleModalLabel">sources.txt</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="font-weight-bold">Використані джерела </h1>
+                    <a href="https://www.geeksforgeeks.org/how-to-install-ubuntu-on-virtualbox/">https://www.geeksforgeeks.org/how-to-install-ubuntu-on-virtualbox/</a>
+                    <a href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox">https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox</a>
+                    <a href="https://uk.ubunlog.com/%D1%8F%D0%BA-%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D0%B8-ubuntu-%D1%83-virtualbox/">https://uk.ubunlog.com/%D1%8F%D0%BA-%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D0%B8-ubuntu-%D1%83-virtualbox/</a>
+                    <a href="https://www.freecodecamp.org/news/how-to-install-ubuntu-with-oracle-virtualbox/">https://www.freecodecamp.org/news/how-to-install-ubuntu-with-oracle-virtualbox/</a>
+                    <a href="https://www.youtube.com/watch?v=BYotM03mkEo">https://www.youtube.com/watch?v=BYotM03mkEo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- instruction -->
+    <div class="modal fade" id="instruction" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title fs-5" id="exampleModalLabel">instruction.txt</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h1 class="font-weight-bold">Встановлення Ubuntu 24.04.1 LTS (x64)</h1>
+                    <h6 class="font-weight-bold">1.  Встановіть <a href="https://rufus.ie/uk/">rufus.</a></h6>
+                    <h6 class="font-weight-bold">2. Завантажте <a href="https://ubuntu.com/download/desktop">ISO-образ Ubuntu.</a></h6>
+                    <h6 class="font-weight-bold">3. Відкрийте програму rufus.</h6>
+                    <img src="/static/instruction/3.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">4. У цьому вікні виберіть флешку, на яку буде записано образ, а також вкажіть ISO-файл. Усі наступні параметри буде обрано автоматично.</h6>
+                    <img src="/static/instruction/4.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">5.  Далі, щоб запустити, потрібно увійти в BIOS і налаштувати завантаження з флешки. Для цього відкрийте Boot Menu та оберіть пристрій, з якого здійснюватиметься запуск.</h6>
+                    <img src="/static/instruction/5.jpg" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">6.  Після перезавантаження виберіть пункт Try or Install Ubuntu і зачекайте, поки система завантажиться.</h6>
+                    <img src="/static/instruction/6.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">7.  Далі оберіть бажану мову інтерфейсу та натисніть Next.</h6>
+                    <img src="/static/instruction/7.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">8.  Далі цей пункт виконайте відповідно до ваших особистих потреб.</h6>
+                    <img src="/static/instruction/8.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">9.  Оберіть розкладку клавіатури.</h6>
+                    <img src="/static/instruction/9.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">10. Далі оберіть спосіб підключення до інтернету</h6>
+                    <img src="/static/instruction/10.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">11.Тут оберіть, що ви хочете зробити з Ubuntu.</h6>
+                    <img src="/static/instruction/11.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">12. Далі як ви хочете встановити.</h6>
+                    <img src="/static/instruction/12.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">13. Тут оберіть другий пункт, якщо ви хочете, щоб одразу встановився (LibreOffice, як приклад).</h6>
+                    <img src="/static/instruction/13.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">14. Тут обирайте на ваш смак</h6>
+                    <img src="/static/instruction/14.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">15.  Тут знову вибираємо як ви хочете встановити.</h6>
+                    <img src="/static/instruction/15.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">16. Оберіть, куди ви хочете встановити.</h6>
+                    <img src="/static/instruction/16.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">17. Створіть свій акаунт.</h6>
+                    <img src="/static/instruction/17.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">18. Виберіть ваш часовий пояс.</h6>
+                    <img src="/static/instruction/18.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">19. Перевірте ваші налаштування та натисніть Install.</h6>
+                    <img src="/static/instruction/19.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">20. Зачекайте, поки установка завершиться.</h6>
+                    <img src="/static/instruction/20.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">21. Зачекайте, поки установка завершиться.</h6>
+                    <img src="/static/instruction/21.png" alt="" class="img-fluid mb-4">
+                    <img src="/static/instruction/21.2.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">22. Останні налаштування.</h6>
+                    <img src="/static/instruction/22.png" alt="" class="img-fluid mb-4">
+                    <img src="/static/instruction/22.2.png" alt="" class="img-fluid mb-4">
+                    <img src="/static/instruction/22.3.png" alt="" class="img-fluid mb-4">
+                    <img src="/static/instruction/22.4.png" alt="" class="img-fluid mb-4">
+                    <h6 class="font-weight-bold">Вітаємо! Ви встановили Ubuntu🎉🎉🎉</h6>
+                </div>
             </div>
         </div>
     </div>
@@ -52,7 +148,7 @@
                 </div>
                 <div class="modal-body">
                     <h1 class="font-weight-bold">Встановлення Ubuntu 24.04.1 LTS (x64) на VirtualBox 7.1.4</h1>
-                    <h6 class="font-weight-bold">1. Встановіть<a href="https://www.virtualbox.org/wiki/Downloads">VirutalBox.</a></h6>
+                    <h6 class="font-weight-bold">1. Встановіть <a href="https://www.virtualbox.org/wiki/Downloads">VirutalBox.</a></h6>
                     <h6 class="font-weight-bold">2. Завантажте <a href="https://ubuntu.com/download/desktop">ISO-образ Ubuntu.</a></h6>
                     <h6 class="font-weight-bold">3. Зайдіть у VirtualBox та натисніть «Створити»:</h6>
                     <img src="/static/3.png" alt="" class="img-fluid mb-4">
@@ -139,41 +235,7 @@
         </div>
     </div>
     
-    <!-- camera -->
-    <div class="modal fade" id="camera" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content custom-dark">
-                <style>
-                    .modal-content {
-                        border-radius: 0; 
-                    }
-                    .modal-content.custom-dark {
-                        background-color: #000000;
-                        color: white;
-                        border: none;
-                    }
-                    .modal-header .close-c {
-                        position: absolute;
-                        top: 15px;
-                        right: 15px; 
-                        color: white; 
-                        opacity: 1; 
-                    }
-                </style>
-                <div class="modal-header">
-                    <p class="modal-title fs-5" id="exampleModalLabel">Камера</p>
-                    <button type="button" class="close close-c" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-between">
-                    <img class="m-4 img-fluid" src="/static/camera.jpg" alt="" style="max-width: 600px;">
-                    <img class="m-4 img-fluid" src="/static/camera_btm.png" alt="" style="max-width: 70px;">
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
