@@ -18,7 +18,7 @@
                 <img src="/static/nautilus.png" alt="" style="max-width: 50px;">
             </div>
             <div class="app mt-3">
-                <img src="/static/camera.png" alt="" style="max-width: 50px;">
+                <img src="/static/camera.png" alt="" style="max-width: 50px;" data-toggle="modal" data-target="#camera">
             </div>
             <div class="app mt-3">
                 <img src="/static/terminal.png" alt="" style="max-width: 50px;">
@@ -65,7 +65,7 @@
                     <a href="https://www.geeksforgeeks.org/how-to-install-ubuntu-on-virtualbox/">How to install Ubuntu on VirtualBox?</a><br>
                     <a href="https://ubuntu.com/tutorials/how-to-run-ubuntu-desktop-on-a-virtual-machine-using-virtualbox">How to run an Ubuntu Desktop virtual machine using VirtualBox 7</a><br>
                     <a href="https://uk.ubunlog.com/%D1%8F%D0%BA-%D0%B2%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D0%B8-ubuntu-%D1%83-virtualbox/">Як встановити Ubuntu на VirtualBox</a><br>
-                    <a href="https://www.freecodecamp.org/news/how-to-install-ubuntu-with-oracle-virtualbox/">How to install Ubuntu on VirtualBox</a>
+                    <a href="https://www.freecodecamp.org/news/how-to-install-ubuntu-with-oracle-virtualbox/">How to install Ubuntu on VirtualBox</a><br>
                     <a href="https://www.youtube.com/watch?v=BYotM03mkEo">How to Install Ubuntu 24.04 without USB | Dualboot | UEFI</a>
                 </div>
             </div>
@@ -292,6 +292,43 @@
             </div>
         </div>
     </div>
+
+    <!-- camera -->
+    <div class="modal fade" id="camera" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content custom-dark">
+                <style>
+                    .modal-content {
+                        border-radius: 0; 
+                    }
+                    .modal-content.custom-dark {
+                        background-color: #161616;
+                        background-color: #000000;
+                        color: white;
+                        border: none;
+                    }
+                    .modal-header .close-c {
+                        position: absolute;
+                        top: 15px;
+                        right: 15px; 
+                        color: white; 
+                        opacity: 1; 
+                    }
+                </style>
+                <div class="modal-header">
+                    <p class="modal-title fs-5" id="exampleModalLabel">Камера</p>
+                    <button type="button" class="close close-c" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-between">
+                    <img class="m-4 img-fluid" src="/static/camera.jpg" alt="" style="max-width: 600px;">
+                    <img class="m-4 img-fluid" src="/static/camera_btm.png" alt="" style="max-width: 70px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
     
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
